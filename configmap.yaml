@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-configmap
+  namespace: fullstack
+data:
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "mydb"
+  DB_USER: "admin"
+  PORT: "5000"
+  VITE_BACKEND_URL: "http://backend-service:5000"
