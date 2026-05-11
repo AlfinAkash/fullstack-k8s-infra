@@ -4,9 +4,10 @@ metadata:
   name: backend-service
   namespace: fullstack
 spec:
+  type: NodePort
   selector:
     app: backend
   ports:
     - port: 5000
       targetPort: 5000
-  type: ClusterIP
+      nodePort: 30500

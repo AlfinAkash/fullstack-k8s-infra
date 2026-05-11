@@ -1,0 +1,63 @@
+Kubernetes Fullstack Deployment Commands (Frontend + Backend)
+
+---
+
+
+1. Build Frontend Image
+
+---
+
+docker build 
+--no-cache 
+--build-arg VITE_BACKEND_URL=http://localhost:5000 
+-t alfinakash/fullstack-frontend:k8s ./frontend
+
+---
+
+2. Push Frontend Image
+
+---
+
+docker push alfinakash/fullstack-frontend:k8s
+
+---
+
+3. Backend Port Forward (Kubernetes)
+
+---
+
+kubectl port-forward svc/backend-service 5000:5000 -n fullstack
+
+---
+
+4. Frontend Port Forward (Kubernetes)
+
+---
+
+kubectl port-forward svc/frontend-service 8080:80 -n fullstack
+
+---
+
+5. Access URLs (Local Development)
+
+---
+
+Frontend:
+http://localhost:8080
+
+Backend:
+http://localhost:5000
+
+---
+
+6. Restart / Update Frontend Deployment
+
+---
+
+Option 1:
+kubectl rollout restart deployment/frontend-deployment -n fullstack
+
+Option 2:
+kubectl set image deployment/frontend-deployment 
+frontend=alfinakash/fullstack-frontend:k8s 
+-n fullstack
