@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: alfinakash/fullstack-frontend:0.4
+          image: alfinakash/fullstack-frontend:k8s
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
