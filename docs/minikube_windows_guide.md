@@ -183,12 +183,12 @@ Changes current directory to D drive root so all files are stored on D drive.
 ### Clone the Kubernetes manifests repo
 
 ```powershell
-git clone https://github.com/AlfinAkash/autodeploy-fullstack-k8s.git
+git clone https://github.com/AlfinAkash/fullstack-k8s-infra.git
 ```
 
 **What this does:**
 Downloads all your Kubernetes YAML files from GitHub into a new folder
-`D:\autodeploy-fullstack-k8s`. This includes all 10 manifest files
+`D:\fullstack-k8s-infra\k8s`. This includes all 10 manifest files
 (namespace, configmap, secret, pvc, statefulset, services, deployments).
 
 ---
@@ -196,7 +196,7 @@ Downloads all your Kubernetes YAML files from GitHub into a new folder
 ### Enter the repo folder
 
 ```powershell
-cd D:\autodeploy-fullstack-k8s
+cd D:\fullstack-k8s\k8s
 ```
 
 **What this does:**
