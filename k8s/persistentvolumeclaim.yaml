@@ -3,9 +3,20 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
   namespace: fullstack
+# spec:
+#   accessModes:
+#     - ReadWriteOnce
+#   resources:
+#     requests:
+#       storage: 5Gi
+
+
+# This is the updated version for Minikube, which requires a storage class to be specified. We will use the default storage class provided by Minikube, which is called "standard". You can check the available storage classes in your cluster by running: kubectl get storageclass
+
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: standard    
   resources:
     requests:
       storage: 5Gi

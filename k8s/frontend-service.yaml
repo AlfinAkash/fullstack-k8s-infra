@@ -3,12 +3,23 @@ kind: Service
 metadata:
   name: frontend-service
   namespace: fullstack
+# spec:
+#   selector:
+#     app: frontend
+#   ports:
+#     - port: 80
+#       targetPort: 3000
+#   type: LoadBalancer
+
+
+# this is the updated version for Minikube, which does not support LoadBalancer type services. Instead, we use NodePort to expose the service on a specific port on the node.
 spec:
   selector:
     app: frontend
   ports:
     - port: 80
       targetPort: 3000
-  type: LoadBalancer
+      nodePort: 30080      # add this line
+  type: NodePort           # change from LoadBalancer to NodePort
   # Minikube → change type to NodePort
   # then run: minikube service frontend-service -n fullstack
