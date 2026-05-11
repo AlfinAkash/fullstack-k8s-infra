@@ -449,4 +449,4 @@ PersistentVolumeClaim (5Gi disk on D:\minikube)
 ## Related Repos
 
 - Application source code: https://github.com/AlfinAkash/autodeploy-fullstack-ec2
-- Kubernetes manifests: https://github.com/AlfinAkash/autodeploy-fullstack-k8s
+- Kubernetes manifests: https://github.com/AlfinAkash/fullstack-k8s
