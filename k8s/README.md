@@ -183,6 +183,33 @@ kubectl delete namespace fullstack
 
 ---
 
+## Screenshots
+
+### Kubernetes Deployment & Services
+
+![Kubernetes Deployment](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/Terminanl_screenshot.png)
+
+---
+
+### Application Logs
+
+![Application Logs](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/Application_logs.png)
+
+---
+
+### Frontend UI
+
+![Frontend UI](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/UI.png)
+
+<!-- ---
+![Kubernetes Deployment](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/Terminanl_screenshot.png)
+
+![Application Logs](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/Application_logs.png)
+
+![Frontend UI](https://raw.githubusercontent.com/AlfinAkash/fullstack-k8s-infra/main/screenshots/UI.png) -->
+
+---
+
 ##  Related
 
 - Application source: [autodeploy-fullstack-ec2](https://github.com/AlfinAkash/autodeploy-fullstack-ec2)
