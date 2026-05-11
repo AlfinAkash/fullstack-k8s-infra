@@ -15,7 +15,7 @@ Kubernetes manifests to deploy the [autodeploy-fullstack-ec2](https://github.com
 ##  File Structure
 
 ```
-/
+k8s/
 ├── namespace.yaml               # Namespace: fullstack
 ├── configmap.yaml               # App config (DB host, ports, env vars)
 ├── secret.yaml                  # DB password + JWT secret (base64)
